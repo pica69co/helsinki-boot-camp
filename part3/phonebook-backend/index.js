@@ -5,7 +5,7 @@ const morgan = require("morgan")
 const cors = require("cors")
 const Person = require("./models/person")
 
-app.use(express.static("build"))
+//app.use(express.static("build"))
 
 app.use(cors())
 
@@ -135,7 +135,7 @@ app.use(errorHandler)
 
 // App listening at port for HTTP requests
 
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT
 app.listen(PORT, () => {
 	console.log(`Server running on port ${PORT}`)
 })
