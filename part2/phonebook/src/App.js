@@ -81,13 +81,13 @@ const App = () => {
           setMessageError(`${newName} was successfully added`);
           setTimeout(() => {
             setMessageError(null);
-          }, 2000);
+          }, 3000);
         })
         .catch((error) => {
           setMessageError(`[ERROR] ${error.response.data.error}`);
           setTimeout(() => {
             setMessageError(null);
-          }, 2000);
+          }, 4000);
           console.log(error.response.data);
         });
     }
