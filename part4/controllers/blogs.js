@@ -72,8 +72,8 @@ blogsRouter.put("/:id", async (request, response) => {
 		{ user, likes, url, author, title }
 	)
 
-	const blogUpdated = await Blog.findById(id)
-	response.json(blogUpdated)
+	const blogModificado = await Blog.findById(id)
+	response.json(blogModificado)
 
 	if (result.n) {
 		return response
